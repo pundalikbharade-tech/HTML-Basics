@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <h1>Complete Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Enter Your name"
+          autofocus
+          maxlength="50"
+        />
+        <br />
+        <label for="email">Email:</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" id="password" name="password" minlength="6" />
+        <br />
+        <label for="age">Age:</label>
+        <br />
+        <input type="number" id="age" name="age" min="18" max="90" step="1" />
+        <br />
+        <label for="birth">Date of Birth</label>
+        <br />
+        <input type="date" id="birth" name="birth" />
+        <br />
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+      </fieldset>
+      <fieldset>
+        <legend>Skills</legend>
+        <input type="checkbox" id="html" name="skills" value="HTML" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS" />
+        <label for="css">CSS</label>
+        <input
+          type="checkbox"
+          id="javascript"
+          name="skills"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label>
+      </fieldset>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="country">Country:</label>
+        <br />
+        <select id="country" name="country">
+          <option value="">--Select--</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="China">China</option>
+        </select>
+        <br />
+        <label for="phonenumber">Phone Number</label>
+        <br />
+        <input
+          type="tel"
+          pattern="[0-9]{10}"
+          placeholder="1234567890"
+          id="phonenumber"
+          name="phonenumber"
+        />
+        <br />
+        <label for="address">Address:</label>
+        <br />
+        <textarea
+          id="address"
+          name="address"
+          placeholder="Enter your address"
+          rows="5"
+          cols="30"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Other Information</legend>
+        <label for="message">Message:</label>
+        <br />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Type your message"
+          rows="5"
+          cols="30"
+        ></textarea>
+        <br />
+        <label for="resume">Upload Resume:</label>
+        <br />
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+        <br />
+        <input type="hidden" name="formversion" value="1.0" />
+        <br />
+        <label for="experience">Experience (0-10 Years):</label>
+        <br />
+        <input
+          type="range"
+          id="experience"
+          name="experience"
+          min="0"
+          max="10"
+        />
+        <br />
+        <label for="favcolor">Favorite Color:</label>
+        <br />
+        <input type="color" id="favcolor" name="favcolor" />
+        <br />
+        <label for="website">Website:</label>
+        <br />
+        <input
+          type="url"
+          id="website"
+          name="website"
+          placeholder="https://example.com"
+        />
+        <br />
+      </fieldset>
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
