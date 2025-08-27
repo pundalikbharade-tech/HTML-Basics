@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Details and Summary tag</title>
+    <style>
+      .main,
+      .main1,
+      .main2,
+      .main3 {
+        width: 1000px;
+        font-size: 30px;
+        background-color: rgb(94, 169, 201);
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      summary {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <details>
+        <summary>What is HTML?</summary>
+        <p>
+          HTML stands for HyperText Markup Language. It is the standard language
+          used to create and structure web pages.
+        </p>
+        <details>
+          <summary style="color: yellow">History of HTML</summary>
+          <p>
+            HTML was created by Tim Berners-Lee in 1991. Since then, it has
+            evolved through many versions, with HTML5 being the latest standard.
+          </p>
+        </details>
+      </details>
+    </div>
+    <div class="main1">
+      <details>
+        <summary>What is CSS?</summary>
+        <p>
+          CSS stands for Cascading Style Sheets. It allows developers to style
+          HTML elements — controlling layout, colors, fonts, and responsiveness.
+        </p>
+      </details>
+    </div>
+    <div class="main2">
+      <details>
+        <summary>What is JavaScript?</summary>
+        <p>
+          JavaScript is a programming language that brings interactivity to web
+          pages. It can respond to user actions, manipulate HTML and CSS, and
+          fetch data from servers.
+        </p>
+      </details>
+    </div>
+    <div class="main3">
+      <details open>
+        <summary>What are &lt;details&gt; and &lt;summary&gt; tags?</summary>
+        <p>
+          The &lt;details&gt; element creates a collapsible section, and
+          &lt;summary&gt; provides the clickable heading. Together, they allow
+          you to hide/show content without writing any JavaScript.
+        </p>
+      </details>
+    </div>
+  </body>
+</html>
